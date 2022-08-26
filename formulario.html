@@ -11,8 +11,40 @@
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre"><br>
         <label for="clave">Clave</label>
-        <input type="password" name="clave" id="clave" placeholder="Ingrese clve">
+        <input type="password" name="clave" id="clave" placeholder="Ingrese clve"><br>
+        <input type="submit" name="submit" id="submit" value="Enviar">
+        <input type="reset" name="reset" id="reset" value="Limpiar">
+        <hr>
+        <h3>Estado civil:</h3>
+        <label for="soltero">Soltero</label>
+        <input type="radio" name="estadoC"  id="soltero" value="1" checked>
+        <label for="casado">Casado</label>
+        <input type="radio" name="estadoC" id="casado" value="2">
+        <label for="divor">Divorciado</label>
+        <input type="radio" name="estadoC" id="divor" value="3">
+        <hr>
+        <h3>Seleccione los lenguajes que domina:</h3>
+        <input type="checkbox" name="leng1">Java
+        <input type="checkbox" name="leng2">Python
+        <input type="checkbox" name="leng3">JavaScript
+        <hr>
+        <h3>Selecione la ciudad de trabajo</h3>
+        <select name="ciudad" id="ciudad">
+            <option value="1">Bogotá</option>
+            <option value="2">Medellín</option>
+            <option value="3">Barranquilla</option>
+            <option value="4">Pereira</option>
+        </select>
 
+        <h3>Selecione la ciudades en las cuales ha trabajado</h3>
+        <select name="ciudad" id="ciudad" multiple size="3">
+            <option value="1">Bogotá</option>
+            <option value="2">Medellín</option>
+            <option value="3">Barranquilla</option>
+            <option value="4">Pereira</option>
+            <option value="5">Bucaramanga</option>
+            <option value="6">Cali</option>
+        </select>
     </form>
 </body>
 </html>

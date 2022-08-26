@@ -1,0 +1,25 @@
+body{
+    color: gray;
+}
+h2,h3 {
+    color: lightcoral;
+    background-color: lightgray;
+    font-size: 40px;
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+#head {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30 px;
+    text-align: center;
+    color: blue;
+    background-color: lightpink;
+}
+.resaltar{
+    color: black;
+    background-color: yellow;
+    font-style: italic;
+}
