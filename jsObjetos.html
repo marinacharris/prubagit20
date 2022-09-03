@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Cliente(nombre, saldo){
+            this.nombre = nombre
+            this.saldo = saldo
+            this.depositar = depositar
+            this.extraer = extraer
+        }
+
+        function depositar(dinero){
+            this.saldo = this.saldo + dinero
+        }
+        function extraer(dinero){
+            this.saldo = this.saldo - dinero
+        }   
+
+        let cliente1 = new Cliente("Juan", 50000)
+        document.write("Nombre del cliente " + cliente1.nombre+ "<br>")
+        document.write("Saldo: " + cliente1.saldo + "<br>")
+        cliente1.depositar(20000)
+        document.write("Saldo: " + cliente1.saldo + "<br>")
+        cliente1.extraer(10000)
+        document.write("Saldo: " + cliente1.saldo + "<br>")
+    </script>
+</body>
+</html>
