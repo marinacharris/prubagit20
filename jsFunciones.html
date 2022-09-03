@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="total"></h1>
+    <script>
+        function cargarPrecios(precios){
+            for(let i = 0; i < precios.length; i++){
+                let precio = parseInt(prompt("Ingrese el precio"))
+                precios[i] = precio
+            }
+        }
+
+        function calcularTotal(precios){
+            let total = 0
+            for(let i of precios){
+                total = total + i
+            }
+            return total
+        }
+
+        let precios = new Array(5)
+        cargarPrecios(precios);
+        document.write(calcularTotal(precios))
+        //document.getElementById("total").innerHTML = calularTotal(precios)
+    </script>
+</body>
+</html>

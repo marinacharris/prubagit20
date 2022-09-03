@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="t1">Titulo 1</h1>
+    <h2 id="t2">Titulo 2</h2>
+    <h1 id="t3">Titulo 3</h1>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        let x = $(document)
+        x.ready(inicio)
+        function inicio() {
+            let x = $("#t1")
+            x.click(fun1)
+            x = $("#t2")
+            x.click(fun2)
+            x = $("#t3")
+            x.click(fun3)
+        }
+        function fun1(){
+           let x = $("#t1")
+           x.css("color", "yellow")
+           x.css("background-color", "gray")
+        }
+        function fun2(){
+            let x = $("#t2")
+            x.css("background-color", "black")
+            x.css("color", "white")
+        }
+        function fun3(){
+            let x = $("#t3")
+            x.css("font-size", "40px")
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="prueba"></h1>
+    <h2 id="prueba2"></h2>
+    <script>
+        //while
+        let conta = 1
+        while(conta <= 10){
+            document.write(conta)
+            document.write('<br>')
+            conta++
+        }
+        document.write('<br>')
+        conta =1
+        do{
+            document.write(conta)
+            document.write('<br>')
+            conta++
+        }while(conta <=10)
+        document.write('<br>')
+        for(let i = 1; i<11; i++){
+            document.write(i)
+            document.write('<br>')
+        }
+        document.write('<br>')
+        const ciudades = ["Pereira","Bogotá","Cali", "Mdellín"]
+        const frutas = new Array("Pera","Manzana","Coco")
+        for(let i in ciudades){
+            document.write(i)
+            document.write('<br>')
+        }
+        document.write('<br>')
+        for(let i of ciudades){
+            document.write(i)
+            document.write('<br>')
+        }
+        document.getElementById("prueba").innerHTML = frutas.toString()
+        document.getElementById("prueba2").innerHTML = frutas.join("-")
+
+    </script>
+</body>
+</html>
